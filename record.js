@@ -11,9 +11,8 @@ const recordRoutes = express.Router();
 const dbo = require('../db/conn');
 
 recordRoutes.route('/').get(async function (_req, res) {
-  res.status(200).send('Bienvenido al Backend de Gerardo!!' 
+  res.status(200).send('Bienvenido al Backend!!' 
   + "<br> Hostname = " + os.hostname()
-  + "<h2>CC19089, Gerardo Anibal Campos Chávez</h2>"
   + "<br> OS = " + os.platform()
   + "<br> version = " + os.version()
   + "<br> Total Memoria "+ os.totalmem()  
